@@ -1,7 +1,42 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("../fonts/Norse-Bold.otf") format("opentype");
+}
+
+
 *::before,
 *::after,
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+header.main {
+  background-image: url('/images/background.jpg');
+  background-size:cover;
+  background-position: 50%;
+  width: calc(100% / 3);
+  color: white;
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  top: 25%;
+  background: rgba(0, 0, 0, 0.5);  
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  font-family: "Norse Bold", sans-serif;
+  font-size: 80px;
+  line-height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
