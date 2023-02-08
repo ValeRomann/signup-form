@@ -55,12 +55,17 @@ main {
   margin: auto;
 }
 
-header.form {
+header.form-header {
   font-size: 1.2rem;
   font-weight: bold;
   padding-right: 50px;
 }
 
-header.form p:last-child{
+header.form-header p:last-child{
   margin-top: 1em;
 } 
+
+fieldset {
+  border: none;
+  background-color: white;
+}

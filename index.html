@@ -16,7 +16,7 @@
     </header>
     <main>
       <div class="form-container">
-        <header class="form">
+        <header class="form-header">
           <p>
             This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus,
             commodi!
@@ -24,6 +24,19 @@
           <p>Sign up now to get started.</p>
           <p>You know you want to.</p>
         </header>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Let's do this!</legend>
+            <input type="text" id="fname" name="fname" required>
+            <input type="text" id="lname" name="lname" required>
+            <input type="email" id="email" name="email" required>
+            <input type="tel" id="phone" name="phone" required>
+            <input type="password" id="password" name="password" required>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+          </fieldset>
+          <button type="submit">Create Account</button>
+          <p>Already have account? <a href="#">Log in</a></p>
+        </form>
       </div>
     </main>
   </div>
