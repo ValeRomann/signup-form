@@ -35,8 +35,8 @@ h1 {
   text-align: center;
   padding: 10px 0;
   font-family: "Norse Bold", sans-serif;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 90px;
+  line-height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@ h1 {
 
 main {
   background-color: #f9fafb;
-  width: 75%;
+  width: calc(100% / 3 * 2);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +58,7 @@ header.form-header,
 }
 
 header.form-header {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: bold;
   margin-bottom: 50px;
 }
@@ -72,5 +72,83 @@ header.form-header p:last-child{
   background-color: white;
   padding-top: 20px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 36px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.inputs-table {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+}
+
+.input-cell {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-cell label {
+  text-transform: uppercase;
+  font-size: 0.75em;
+  color: #49515d;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.input-cell input {
+  width: 80%;
+  padding: 5px;
+  font-size: 1em;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #E5E7EB;
+}
+
+.input-cell input:focus {
+  border: 1px solid blue;
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.buttons-container button {
+  background-color: #596D48;
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 15px 50px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 36px;
+}
+
+.buttons-container button:hover {
+    background-color: #495D38;
+}
+
+.buttons-container button:active {
+  background-color: #394D28;
+}
+
+.buttons-container p {
+  font-size: 1.2em;
+}
+
+.buttons-container p a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.buttons-container p a:hover {
+  text-decoration:underline;
+}
+
+.buttons-container p a:active {
+  color: #394D28;
+  text-decoration:underline;
 }
