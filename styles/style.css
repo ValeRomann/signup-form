@@ -15,12 +15,12 @@
 
 .main-container {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header.main {
   background-image: url('/images/background.jpg');
-  background-size:cover;
+  background-size: cover;
   background-position: 50%;
   width: calc(100% / 3);
   color: white;
@@ -30,7 +30,7 @@ header.main {
 header.main h1 {
   position: absolute;
   top: 25%;
-  background: rgba(0, 0, 0, 0.5);  
+  background: rgba(0, 0, 0, 0.5);
   width: 100%;
   text-align: center;
   padding: 10px 0;
@@ -49,6 +49,7 @@ header.main p {
   width: 100%;
   text-align: center;
 }
+
 header.main p,
 header.main p a {
   color: white;
@@ -58,6 +59,10 @@ header.main p a:active,
 header.main p a:hover {
   color: #eee;
 }
+
+
+/* MAIN FORM */
+
 
 main {
   background-color: #f9fafb;
@@ -75,14 +80,14 @@ header.form-header,
 }
 
 header.form-header {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 50px;
 }
 
-header.form-header p:last-child{
+header.form-header p:last-child {
   margin-top: 1em;
-} 
+}
 
 .input-container {
   border: none;
@@ -156,7 +161,7 @@ header.form-header p:last-child{
 }
 
 .buttons-container button:hover {
-    background-color: #495D38;
+  background-color: #495D38;
 }
 
 .buttons-container button:active {
@@ -174,11 +179,69 @@ header.form-header p:last-child{
 }
 
 .buttons-container p a:hover {
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
 .buttons-container p a:active {
   color: #394D28;
-  text-decoration:underline;
+  text-decoration: underline;
 }
 
+@media only screen and (max-width: 723px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header.main {
+    width: 100%;
+  }
+
+  header.main h1 {
+    position: static;
+  }
+
+  header.main p {
+    position: absolute;
+    font-size: 0.6em;
+    text-align: right;
+    bottom: 2%;
+    width: 100%;
+    opacity: 0.8;
+  }
+
+  main {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  header.form-header,
+  .input-container,
+  .buttons-container {
+    padding: 20px;
+  }
+
+  header.form-header {
+    margin-bottom: 16px;
+  }
+
+  .input-container {
+    margin-bottom: 10px;
+  }
+
+  .input-cell {
+    width: 100%;
+  }
+
+  .input-cell input {
+    width: 100%;
+  }
+
+  .buttons-container {
+    text-align: center;
+  }
+
+  .buttons-container button {
+    margin-bottom: 20px;
+  }
+}
