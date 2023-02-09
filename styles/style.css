@@ -19,7 +19,7 @@
 }
 
 header.main {
-  background-image: url('/images/background.jpg');
+  background-image: url('../images/background.jpg');
   background-size: cover;
   background-position: 50%;
   width: calc(100% / 3);
