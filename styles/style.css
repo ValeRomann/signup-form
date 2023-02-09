@@ -50,22 +50,27 @@ main {
   align-items: center;
 }
 
-.form-container {
-  width: 90%;
-  margin: auto;
+header.form-header,
+.input-container,
+.buttons-container {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 header.form-header {
   font-size: 1.2rem;
   font-weight: bold;
-  padding-right: 50px;
+  margin-bottom: 50px;
 }
 
 header.form-header p:last-child{
   margin-top: 1em;
 } 
 
-fieldset {
+.input-container {
   border: none;
   background-color: white;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
 }
