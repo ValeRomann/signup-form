@@ -35,7 +35,7 @@
               </div>
               <div class="input-cell">
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lname" required>
+                <input type="text" id="lname" name="lname">
               </div>
               <div class="input-cell">
                 <label for="email">Email</label>
@@ -43,15 +43,16 @@
               </div>
               <div class="input-cell">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" required>
+                <input type="tel" id="phone" name="phone">
               </div>
               <div class="input-cell">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <p id="password-error-message" class="error-message">* Passwords do not mutch</p>
               </div>
               <div class="input-cell">
                 <label for="password-confirm">Confirm Password</label>
-                <input type="password" id="password-confirm" name="password-confirm" required>
+                <input type="password" id="password-confirm" name="password-confirm" minlength="8" required>
               </div>
             </div>
           </div>

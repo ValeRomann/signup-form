@@ -44,6 +44,7 @@ header.main h1 {
 
 header.main p {
   position: absolute;
+  font-size: 0.9em;
   bottom: 2%;
   width: 100%;
   text-align: center;
@@ -107,6 +108,7 @@ header.form-header p:last-child{
   width: 40%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .input-cell label {
@@ -126,9 +128,20 @@ header.form-header p:last-child{
   border: 1px solid #E5E7EB;
 }
 
+.input-cell input.error {
+  border: 1px solid red;
+}
+
 .input-cell input:focus {
   border: 1px solid #1d4ed8;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.error-message {
+  font-size: 0.8em;
+  position: absolute;
+  bottom: -1.2em;
+  color: red;
 }
 
 .buttons-container button {
@@ -168,3 +181,4 @@ header.form-header p:last-child{
   color: #394D28;
   text-decoration:underline;
 }
+
