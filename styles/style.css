@@ -27,7 +27,7 @@ header.main {
   position: relative;
 }
 
-h1 {
+header.main h1 {
   position: absolute;
   top: 25%;
   background: rgba(0, 0, 0, 0.5);  
@@ -40,6 +40,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+header.main p {
+  position: absolute;
+  bottom: 2%;
+  width: 100%;
+  text-align: center;
+}
+header.main p,
+header.main p a {
+  color: white;
+}
+
+header.main p a:active,
+header.main p a:hover {
+  color: #eee;
 }
 
 main {
@@ -111,7 +127,7 @@ header.form-header p:last-child{
 }
 
 .input-cell input:focus {
-  border: 1px solid blue;
+  border: 1px solid #1d4ed8;
   box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -123,7 +139,7 @@ header.form-header p:last-child{
   padding: 15px 50px;
   border: none;
   border-radius: 5px;
-  margin-bottom: 36px;
+  margin-bottom: 30px;
 }
 
 .buttons-container button:hover {
